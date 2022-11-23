@@ -1,0 +1,32 @@
+metabase uses javascript language for its front end development
+first of all i open the metabase documentation
+then i went to the frontend folder
+then i selected select folder
+then i selected metabase folder inside select folder
+then i selected lib folder'
+then i selected unit test
+the test has name of validate.unit.spec.js
+it has the code written inside of it
+first of all it imports the validates
+it has 2 test cases
+
+TEST 1
+
+it("should return an error if the value is null", () => {
+      expect(validators.required()(null)).toBe("required");
+    });
+   it means it should return error if its value is null
+   
+it("should return an error if the value is undefined", () => {
+      expect(validators.required()(null)).toBe("required");
+    });   
+    it means it should return undefined in case of error
+    
+it("should return an error if the value is an empty string", () => {
+      expect(validators.required()("")).toBe("required");
+    });
+    it means to return an error in case of empty string
+    
+xit("should return an error if the value is a number", () => {
+      expect(validators.required()(0)).toBeFalsy();
+     and the last one is should return an error if the value is a number
